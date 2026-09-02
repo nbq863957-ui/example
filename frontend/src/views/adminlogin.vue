@@ -68,7 +68,7 @@ const handleLogin = async () => {
         if (type === 'success') {
           userStore.login(form.value.username, receivedToken);
           ElMessage.success(message || '登录成功');
-          router.push('/pac');
+          router.push('/admin');
         } else {
           ElMessage.error(message || '登录失败');
         }
